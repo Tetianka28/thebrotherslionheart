@@ -203,6 +203,7 @@ body, html {
     grid-column: 1 / span 5;
     grid-row: auto;
     margin: 2.813rem 0;
+    padding: 0 0.625rem 0 2.938rem;
 }
 .popup_area button{
     background-color: var(--color-gold-pdfbox);
@@ -338,7 +339,8 @@ body, html {
     grid-template-rows: auto;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+    margin: auto auto;
+    max-height: 80%;
 }
 .footer_block_content_logos{
     grid-column: 1/ span 6;
@@ -346,6 +348,8 @@ body, html {
 }
 .footer_block_content_logos img{
     margin: 0 2.5rem 0 0;
+    height: auto;
+    max-width: 50%;
 }
 .footer_block_content_text{
     list-style: none;
