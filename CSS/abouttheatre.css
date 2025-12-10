@@ -9,6 +9,13 @@ html {
     margin: 0;
 }
 
+/* .container_about_theatre {
+    width: var(--width-full);
+    display: grid;
+    grid-template-rows: auto;
+    gap: var(--grid-gap);
+} */
+
 .hero {
     background: linear-gradient(to bottom, #17232D00 80%, #17232D 100%), url(../img/night_sky_darkened.png);
     width: var(--width-full);
@@ -34,7 +41,7 @@ html {
 }
 
 .hero_container_about_theatre {
-    margin: 167px 0 0 0;
+    margin: 117px 0 0 0;
     grid-column: 1 / span 7; 
 }
 
@@ -74,6 +81,22 @@ html {
 
 .body_content_about_theatre {
     grid-column: 1 / 13;
+}
+
+.block_about_theatre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: var(--width-12col);
+    margin: 0 auto;
+}
+
+.body_content_about_theatre_logo_image {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
 }
 
 .block_about_theatre_text {
