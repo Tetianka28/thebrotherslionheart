@@ -1,0 +1,130 @@
+@import url("main.css");
+@import url("abouttheatre.css");
+
+body,
+html {
+    width: var(--width-full);
+    font-family: "Trajan", serif;
+    position: relative;
+    background-color: #212E35;
+    margin: 0;
+}
+
+.hero_venue {
+    background: linear-gradient(to bottom, #212E3500 80%, #212E35 100%), url(../img/background_landscape.jpg);
+    width: var(--width-full);
+    height: auto;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+    min-height: 1100px;
+}
+
+.hero_container_venue {
+    margin: 167px 0 0 0;
+    grid-column: 1 / span 7; 
+}
+
+.hero_venue_text h1 {
+    font-size: 40px;
+    font-weight: 100;
+    color: var(--color-red);
+    text-transform: uppercase;
+    display: flex;
+    align-items: flex-start;
+}
+
+.hero_venue_text h2 {
+    color: var(--color-red);
+    font-family: var(--font-body);
+    font-weight: 100;
+    letter-spacing: 1.4px;
+    font-size: 23px;
+    margin-top: 16px;
+}
+
+.hero_venue_text_bottom {
+    margin-top: 60px;
+}
+
+.hero_venue_text_bottom p {
+    color: var(--color-red);
+    font-family: var(--font-body);
+    font-weight: 100;
+    font-size: 20px;
+}
+
+/* Accessebility info */
+
+.accessibility_info {
+    width: var(--width-full);
+}
+
+.info_grid_content {
+    width: var(--width-12col);
+    margin: 0 auto;
+    padding: 120px 0 73px 0;
+}
+
+.info_item {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--grid-gap);
+}
+
+.info_icon {
+      grid-column: 2 / span 1;
+  grid-row: 1;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.info_icon img {
+    max-width: 100%;
+    height: auto;
+}
+
+.info_text {
+    grid-column: 3 / span 9; 
+    grid-row: 1;
+    width: 940px;
+}
+
+.info_text h3 {
+    font-family: var(--font-body);
+    font-size: 23px;
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: 15px;
+}
+
+.info_text p {
+    color: var(--color-white);
+    font-family: var(--font-body);
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 1.4;
+    margin-bottom: 45px;
+}
+
+.divider {
+    grid-column: 2 / span 10; 
+    grid-row: 2 / 3;
+    margin-bottom: 45px; 
+}
+
+.divider img {
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+
+.info_item:last-child .divider {
+    margin-bottom: 0;
+}
+
+
