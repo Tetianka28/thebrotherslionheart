@@ -10,27 +10,23 @@ html {
 }
 
 .hero {
-    background: linear-gradient(to bottom, #17232D00 80%, #17232D 100%), url(../img/night_sky_darkened.png);
+    background: linear-gradient(to bottom, transparent 90%, #17232D 100%), url(../img/background_night_sky.png);
     width: var(--width-full);
-    max-height: 600px;
-    height: auto;
+    min-height: 860px;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     display: flex;
     justify-content: center;
     position: relative;
     margin: 0;
-    min-height: 1100px;
 }
 
 .hero_grid_content {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     width: var(--width-12col);
     margin: 0 auto; 
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
     gap: var(--grid-gap);
-
 }
 
 .hero_container_about_theatre {
@@ -40,10 +36,9 @@ html {
 
 .hero_about_theatre_text h1 {
     font-family: var(--font-header);
-    font-size: 42px;
+    font-size: 40px;
     font-weight: 100;
     color: var(--color-white);
-    text-transform: uppercase;
     display: flex;
     align-items: flex-start;
 }
@@ -51,9 +46,9 @@ html {
 .hero_about_theatre_text h2 {
     color: var(--color-white);
     font-family: var(--font-body);
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 1.4px;
-    font-size: 1.188rem;
+    font-size: 23px;
     margin-top: 16px;
 }
 
@@ -63,7 +58,7 @@ html {
 }
 
 .hero_about_theatre_text_bottom p {
-    color: var(--color-white);
+    color: var(--color-white-nav);
     font-family: var(--font-body);
     font-weight: 100;
     font-size: 20px;
@@ -76,6 +71,13 @@ html {
 .body_content_about_theatre {
     grid-column: 1 / 13;
 }
+.about_theatre_navigation_sides{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 13.938rem 0 0 0;
+    width: var(--width-full);
+}
 
 /* About theatre */
 .block_about_theatre {
@@ -87,16 +89,24 @@ html {
     margin: 0 auto;
 }
 
-.body_content_about_theatre_logo_image {
+/* .body_content_about_theatre_logo_image {
     position: absolute;
     left: 50%;
     bottom: 0;
     transform: translate(-50%, 50%);
+    top: 72%;
+} */
+.body_content_about_theatre_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--width-12col);
+    margin: auto;
 }
 
 .block_about_theatre_text {
     max-width: 1020px;
-    padding-top: 120px;
+    padding-top: 80px;
 }
 
 .block_about_theatre_text p {
@@ -107,68 +117,9 @@ html {
     line-height: 1.6;
     margin-bottom: 35px;
 }
-
-
-/* Flickity carousel */
-* {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+.button_about_theatre{
+    margin-top: 60px;
 }
-
-.gallery_about {
-    width: 100%;
-
-}
-
-.gallery_about_grid {
-    max-width: 1200px;
-    margin: 0 auto; 
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 10px;
-}
-
-.gallery {
-    background-color: #17232D;
-    padding: 40px 0 40px;
-    overflow: visible;
-    grid-column: span 12;
-}
-
-.gallery-cell {
-  width: calc((100% - 40px) / 3); 
-  height: auto;
-  margin-right: 10px;
-}
-
-.gallery-cell img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out; 
-    transform: scale(0.7);
-    opacity: 0.8;
-}
-
-.gallery-cell.is-selected img {
-    transform: scale(1.1); 
-    opacity: 1;
-}
-
-
-.flickity-prev-next-button.previous {
-left: -30px; 
-}
-
-
-.flickity-prev-next-button.next {
- right: -30px; 
-}
-
-/* Button */
-
 .visit_button button{
     border-radius: 1.75rem;
     width: 383px;
@@ -181,7 +132,6 @@ left: -30px;
     font-size: 25px;
     color: var(--color-white);
 }
-
 .visit_button button:hover, .visit_button button:focus {
     transform: scale(1.1);
     box-shadow: 0 0 0.938rem #EFBF04;
@@ -221,14 +171,12 @@ left: -30px;
 .about_theatre_contact a:hover {
     color: #007BFF
 }
-
 .about_theatre_contact_address {
     font-family: var(--font-body);
     font-size: 16px;
     line-height: 1.4;
     color: var(--color-white);
 }
-
 .button_about_theatre {
     width: var(--width-12col);
     margin: 0 auto;
