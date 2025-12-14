@@ -230,17 +230,4 @@ html {
     margin-bottom: 45px;
 }
 
-.divider_bottom {
-    margin-bottom: 45px; 
-}
-
-.divider_bottom img {
-    width: 100%; 
-    height: auto;
-    display: block;
-}
-
-.info_item:last-child .divider {
-    margin-bottom: 0;
-}
 }

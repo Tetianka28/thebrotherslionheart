@@ -377,6 +377,8 @@ body, html {
 
 .footer_block_content_text{
     list-style: none;
+    margin: 0;
+    padding: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: var(--grid-gap);
@@ -629,26 +631,127 @@ body, html {
         /* order: 2; */
     }
 
-    .footer_block{
+    /* popup overlay*/ 
+.modal_overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    background-color: #000000cc;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+.modal_overlay_content{
+    background-color: #FAF5C3db;
+    padding: 21px 22px 10px 22px;
+    border-radius: 0.938rem;
+    width: 72%;
+    height: 71%;
+    position: relative;
+    text-align: center;
     display: flex;
+    flex-direction: column;
+    font-family: var(--font-body);
+    align-items: center;
+}
+.modal_overlay_content h3 {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.625rem;
+}
+.modal_overlay_content h3 span{
+    color: var(--color-red);
+    font-family: var(--font-header);
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: 500;
+    display: block;
+}
+.modal_overlay_content p{
+    margin-top: 13px;
+    font-family: var(--font-body);
+    font-size: 15px;
+}
+.modal_overlay_img_container{
+    background-image: url(../img/coloring_book_preview.jpg);
+    background-size: cover;
+    width: 146px;
+    height: 206px;
+    border-radius: 0.938rem;
+    border: 0.125rem solid var(--color-red);
+    margin-top: 14px;
+}
+.close_button{
+    position: absolute;
+    top: 2px;
+    right: 7px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: var(--font-body);
+    color: black;
+    cursor: pointer;
+}
+.email_form{
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+}
+.email_form input{
+    width: 203px;
+    height: 31px;
+    border-radius: 0.625rem;
+    padding: 0 0.625rem;
+    background-color: #ededed;
+    border-color: var(--color-red);
+    outline: none;
+    /* margin-left: 2.25rem; */
+}
+.email_form button{
+    height: 31px;
+    width: 68px;
+    color: var(--color-white);
+    background-color: var(--color-red);
+    border-radius: 0.688rem;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    position: absolute;
+    margin-left: 202px;
+}
+.email_form p{
+    font-size: 8px;   
+    margin: 6px 15px 50px 15px
+}
+#privacy_policy{
+    border: none;
+    background-color: transparent;
+    font-family: var(--font-body);
+    font-size: 8px;
+}
+
+ /**footer**/
+
+.footer_block{
     height: 308px;
-    
 }
 
 .footer_block_content{
     width: var(--width-12col);
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    padding: 33px 53px 19px 51px;
+    margin: auto auto;
+    max-height: 80%;
 }
-
-.footer_block_content_logos {
-    display: none;
+.footer_block_content_logos{
+display: none;
 }
-   
 
 .footer_block_content_logos_mobile {
     display: flex;
@@ -658,46 +761,53 @@ body, html {
 }
 
 .footer_block_content_logos_mobile img{
-    margin: 0 10px 0 0;
+    /* margin: 0 10px 0 0; */
     height: auto;
     max-width: 157px;
 }
-
 .footer_block_content_text{
-        display: flex;
-        flex-direction: column; 
-        align-items: center; 
-        /* list-style: none;  */
-        gap: 0.8rem;
-        margin-top: 0;
-    }
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: var(--grid-gap);
+    grid-column: 1 / 1;
+    justify-items: center;
+}
 
-    .footer_block_content_text .hidden_on_mobile {
+ .footer_block_content_text .hidden_on_mobile {
         display: none;
     }
 
 .footer_block_content_text svg{
-    height: 30px;
+height: 30px;
     width: 30px;
 }
 
-
-.footer_block_content_text li a {
-    font-size: 22px;
+.footer_block_content_text li{
+  font-size: 22px;
     font-weight: 100;
 }
+.footer_block_content_text li a{
+font-size: 22px;
+    font-weight: 100;
+
+}
 .footer_block_content_text svg.fb{
-    margin-right: 15px;
+   margin-right: 15px;
 }
 
-
+.footer_block_content_logos_mobile img{
+    max-height: 46px;
+    width: auto;
+}
 .divider_bottom {
     display: block;
+    height: auto;
+    margin-bottom: 0;
 }
 
 .divider_bottom img {
     width: 100%; 
-    height: auto;
     display: block;
+    height: auto;
 }
 }
