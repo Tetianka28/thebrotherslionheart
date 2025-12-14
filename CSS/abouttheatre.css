@@ -233,21 +233,6 @@ html {
 }
 
 
-.hero_about_theatre_text_bottom {
-    margin-top: 60px;
-}
-
-.hero_about_theatre_text_bottom p {
-    color: var(--color-white-nav);
-    font-family: var(--font-body);
-    font-weight: 100;
-    font-size: 20px;
-}
-
-.hero_about_theatre_text_bottom img {
-    position: absolute;
-}
-
 .body_content_about_theatre,
 .hero_about_theatre_text_bottom {
     display: none;

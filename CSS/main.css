@@ -403,7 +403,7 @@ body, html {
     margin-right: 1.375rem;
 }
 
-.divider {
+.divider_bottom {
     display: none;
 }
 
@@ -413,11 +413,11 @@ body, html {
     --grid-gap: 1rem;
   }
 
-  body, html {
+    body, html {
     background-color: #302211;
 }
 
-  .container{
+.container{
     background: none;
     min-height: 71.625rem;
 }
@@ -691,11 +691,11 @@ body, html {
 }
 
 
-.divider {
+.divider_bottom {
     display: block;
 }
 
-.divider img {
+.divider_bottom img {
     width: 100%; 
     height: auto;
     display: block;
