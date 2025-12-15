@@ -11,7 +11,7 @@ html {
 }
 
 .hero_venue {
-    background: linear-gradient(to bottom, #212E3500 80%, #212E35 100%), url(../img/background_landscape.jpg);
+    background: linear-gradient(to bottom, #212E3500 90%, #212E35 100%), url(../img/background_landscape_venue.png);
     width: var(--width-full);
     height: auto;
     background-size: cover;
@@ -60,6 +60,13 @@ html {
 
 /* Accessebility info */
 
+.body_content_venue_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--width-12col);
+    margin: auto;
+}
 .accessibility_info {
     width: var(--width-full);
 }
@@ -129,3 +136,191 @@ html {
 }
 
 
+@media (max-width: 480px) {
+  :root {
+    --width-12col: min(100% - 1rem, 480px);
+    --grid-gap: 1rem;
+  }
+
+     .clicked {
+        font-size: 1rem !important;
+    }
+
+  .hero_venue {
+    background: linear-gradient(to bottom, #212E3500 90%, #212E35 100%), url(../img/background_landscape_mobile.png);
+    min-height: 1007px;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero_grid_content {
+    width: var(--width-12col);
+    gap: var(--grid-gap);
+}
+
+.hero_container_venue {
+    margin: 97px 0 0 0;
+}
+
+.hero_container_venue {
+    margin: 7rem 0 0 0;
+}
+
+.hero_venue_text {
+   display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align:start; 
+        align-items: flex-start;
+        margin-left: 1rem;
+}
+
+.hero_venue_text h1 {
+    font-size: 29px;
+    text-align: left; 
+}
+
+.hero_venue_text h2 {
+   font-weight: 400;
+    letter-spacing: 1.4px;
+    font-size: 19px;
+    margin-top: 16px;
+    width: 424px;
+}
+
+.hero_venue_text_bottom {
+    margin-top: 60px;
+}
+
+.hero_venue_text_bottom p {
+    color: var(--color-red);
+    font-family: var(--font-body);
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.hero_venue_text_bottom {
+    display: none;
+}
+
+/* Accessebility info */
+
+.body_content_about_theatre_logo{
+    width: var(--width-12col);
+    width: 80px;
+    height: 80px;
+}
+
+.info_grid_content {
+    width: var(--width-12col);
+    padding: 105px 0 77px 0;
+}
+
+/* .body_content_about_theatre_logo{
+    width: var(--width-12col);
+    width: 98px;
+    height: 98px;
+}
+
+.info_grid_content {
+    width: var(--width-12col);
+    padding: 105px 0 77px 0;
+}
+
+.info_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info_icon {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.info_icon img {
+    width: 83px;
+    height: 83px;
+}
+
+.info_text {
+    text-align: left;
+    width: 390px;
+}
+
+.info_text h3 {
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.info_text p {
+    font-size: 18px;
+    margin-bottom: 45px;
+} */
+
+
+.info_item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--grid-gap);
+    grid-template-rows: auto;
+}
+
+.info_icon {
+    grid-column: 1 / 2;
+  grid-row: 1 / 2;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.info_icon img {
+    max-width: 100%;
+    height: auto;
+}
+
+.info_text {
+    width: 350px;
+}
+
+.info_text h3 {
+    grid-column: 1 / 5; 
+    grid-row: 1;
+    font-family: var(--font-body);
+    font-size: 23px;
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: 15px;
+}
+
+.info_text p {
+    grid-column: 1 / span 4; 
+    grid-row: 2;
+    color: var(--color-white);
+    font-family: var(--font-body);
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 1.4;
+    margin-bottom: 45px;
+}
+
+.divider {
+    grid-column: 2 / span 10; 
+    grid-row: 2 / 3;
+    margin-bottom: 45px; 
+}
+
+.divider img {
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+
+.info_item:last-child .divider {
+    margin-bottom: 0;
+}
+}

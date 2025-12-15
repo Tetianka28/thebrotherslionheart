@@ -19,11 +19,17 @@
                 </div>
                 <div class="menu_container">
                     <ul>
-                        <li>
-                            <a href="http://127.0.0.1:5502/index.html">Play info</a>
+                        <li class="menu_container_hiden_mobile">
+                            <a href="http://127.0.0.1:5503/index.html">Play info</a>
                         </li>
-                        <li>
-                            <a href="http://127.0.0.1:5502/abouttheatre.html">About theatre</a>
+                        <li class="menu_container_hiden_desktop">
+                            <a href="http://127.0.0.1:5503/index.html">PLay</a>
+                        </li>
+                        <li class="menu_container_hiden_mobile">
+                            <a href="http://127.0.0.1:5503/abouttheatre.html">About theatre</a>
+                        </li>
+                        <li class="menu_container_hiden_desktop">
+                            <a href="http://127.0.0.1:5503/abouttheatre.html">Theatre</a>
                         </li>
                         <li>
                             <a class="clicked" href="">Venue</a>
@@ -37,8 +43,8 @@
             <div class="hero_grid_content">
                 <div class="hero_container_venue">
                     <div class="hero_venue_text">
-                        <h1>ABOUT SKARNTYDEN</h1>
-                        <h2>Esbjerg Amateur Theatre - Skarntyden, is <br> Esbjerg's oldest theatre association.</h2>
+                        <h1>VENUE INFORMATION</h1>
+                        <h2>Practical information to read before <br> the day of the play in Musikhuset Esbjerg</h2>
                     </div>
                     <div class="hero_venue_text_bottom">
                         <p>Read more below</p>
@@ -53,34 +59,39 @@
                         </div>
                     </div>
                 </div>
-                <div class="body_content_about_theatre_logo">
+                <!-- <div class="body_content_about_theatre_logo">
                     <div class="body_content_about_theatre_logo_image">
                         <img src="/img/musik_logo_icon.png" alt="">
                     </div>
-                </div>
+                </div> -->
             </div>
         </header>
 
         <!-- Accessebility info -->
         <section class="accessibility_info">
-            <div class="info_grid_content">
-                <div class="info_item">
-                    <div class="info_icon">
-                        <img src="/img/wheelchair-outline-24px.png" alt="Wheelchair icon">
-                    </div>
-                    <div class="info_text">
-                        <h3>Info for wheelchair users</h3>
-                        <p>There is wheelchair access to all halls, there are several wheelchair-friendly toilets in the
-                            building, and wheelchair users have the option of bringing a companion with them for free.
-                            When purchasing a ticket, remember to state that you need a wheelchair space when you book,
-                            and kindly indicate if you wish to have a companion with you. Leaders must have an approved
-                            companion card.
-                        </p>
-                    </div>
-                    <div class="divider">
-                        <img src="/img/line_venue.png" alt="">
+            <div class="body_content_venue_logo">
+                    <div class="body_content_avenue_logo_image">
+                        <img src="/img/musik_logo_icon.png" alt="">
                     </div>
                 </div>
+                <div class="info_grid_content">
+                    <div class="info_item">
+                        <div class="info_icon">
+                            <img src="/img/wheelchair-outline-24px.png" alt="Wheelchair icon">
+                        </div>
+                        <div class="info_text">
+                            <h3>Info for wheelchair users</h3>
+                            <p>There is wheelchair access to all halls, there are several wheelchair-friendly toilets in the
+                                building, and wheelchair users have the option of bringing a companion with them for free.
+                                When purchasing a ticket, remember to state that you need a wheelchair space when you book,
+                                and kindly indicate if you wish to have a companion with you. Leaders must have an approved
+                                companion card.
+                            </p>
+                        </div>
+                        <div class="divider">
+                            <img src="/img/line_venue.png" alt="">
+                        </div>
+                    </div>
                 <div class="info_item">
                     <div class="info_icon">
                         <img src="/img/mdi_human-wheelchair.png" alt="human Wheelchair icon">
@@ -129,8 +140,8 @@
             </div>
         </div>
 
-        <!-- Footer-->
-        <footer>
+            <!-- Footer-->
+     <footer>
             <div class="footer_block">
                 <div class="footer_block_content">
                     <div class="footer_block_content_logos">
@@ -141,14 +152,14 @@
                         <li>
                             <a href="">Play info</a>
                         </li>
-                        <li>
+                        <li class="hidden_on_mobile">
                             <a href="https://mhe.dk/" target="_blank">Musikhuset</a>
-                        </li>
-                        <li>
+                        </li> 
+                        <li class="hidden_on_mobile">
                             <a href="">Follow us</a>
                         </li>
                         <li>
-                            <a href="">Venue</a>
+                            <a href="http://127.0.0.1:5502/venue.html">Venue</a>
                         </li>
                         <li>
                             <a href="https://eatskarntyden.dk/" target="_blank">Skarntyden</a>
@@ -172,9 +183,17 @@
                             </a>
                         </li>
                     </div>
+                    <div class="divider_bottom">
+                        <img src="/img/line_big_main_mob.png" alt="">
+                    </div>
+                    <div class="footer_block_content_logos_mobile">
+                        <img src="img/musikhuset_logo.png" alt="musikhuset_logo">
+                        <img src="img/skarntyden.logo.png" alt="skarntyden_logo">
+                    </div>
                 </div>
             </div>
         </footer>
+
     </div>
 </body>
 
