@@ -469,7 +469,7 @@ body, html {
     }
 
     .clicked { 
-        font-size: 1rem !important;
+        font-size: 1.3rem !important;
     }
 
     .hero {
@@ -486,20 +486,9 @@ body, html {
     
     .hero_container {
         grid-column: 1 / span 4;
-        /* display: grid;
-        grid-template-columns: 1fr; */
         margin-top: 7rem;
         margin-left: 1.5rem;
        }
-
-
-/* .hero_text {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-align: left;
-    flex-wrap: wrap;
-} */
 
 .hero_text h1{
     font-size: 2.5rem;
@@ -512,10 +501,10 @@ body, html {
 
 .hero_text h1 span{
     font-size: 1.75rem;
-    padding-top: 50px;
+    padding-top: 0;
     padding-right: 0.5rem;
     margin: 0;
-  /* vertical-align: top; */
+  vertical-align: top;
 }
 .hero_text h2{
     display: none;
@@ -836,14 +825,4 @@ font-size: 22px;
     height: auto;
 }
 
-.read-more-button {
-    text-decoration: none;
-    display: inline-block;
-    color: inherit; 
-    cursor: pointer; 
-}
-
-.read-more-button:hover .hero_venue_text_bottom p {
-    color: var(--color-white);
-}
 }

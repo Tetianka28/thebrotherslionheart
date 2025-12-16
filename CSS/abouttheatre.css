@@ -46,7 +46,7 @@ html {
 .hero_about_theatre_text h2 {
     color: var(--color-white);
     font-family: var(--font-body);
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 0.088rem;
     font-size: 1.438rem;
     margin-top: 1rem;
@@ -89,9 +89,19 @@ html {
     color: inherit; 
     cursor: pointer; 
     border-bottom: solid 2px var(--color-white);
+    transition: border-color 0.1s ease;
 }
 
-.read-more-button:hover .hero_about_theatre_text_bottom p {
+.read-more-button p {
+padding-bottom: 5px;
+}
+
+.hero_about_theatre_text_bottom p:hover {
+    color: var(--color-gold);
+    border-bottom: solid 2px var(--color-gold);
+}
+
+.read-more-button:hover {
     color: var(--color-gold);
     border-bottom: solid 2px var(--color-gold);
 }
@@ -208,7 +218,7 @@ html {
     }
 
     .clicked {
-        font-size: 1rem !important;
+        font-size: 1.3rem !important;
     }
 
     .hero {
@@ -250,8 +260,7 @@ html {
     }
 
 
-    .body_content_about_theatre,
-    .hero_about_theatre_text_bottom {
+    .body_content_about_theatre {
         display: none;
     }
 
@@ -328,4 +337,28 @@ html {
     .about_theatre_contact_address {
         font-size: 16px;
     }
+
+    .read-more-button {
+   margin-left: 1rem;
+}
+
+.read-more-button p {
+padding-bottom: 4px;
+}
+
+.hero_about_theatre_text_bottom p {
+    font-weight: 100;
+    font-size: 1.25rem;
+}
+
+.hero_about_theatre_text_bottom p:hover {
+    color: var(--color-white);
+    border-bottom: solid 2px var(--color-white);
+}
+
+.read-more-button:hover {
+    color: var(--color-white);
+    border-bottom: solid 2px var(--color-white);
+}
+
 }
