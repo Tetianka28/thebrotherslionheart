@@ -595,7 +595,7 @@ body, html {
 
 .hero_text_papyrus_mobile{
     background-image: url(../img/papyrus_mobile.png);
-    width: 24.75rem;
+    width: 100%;
     height: 17.5rem;
     background-repeat: no-repeat;
     background-position: center;

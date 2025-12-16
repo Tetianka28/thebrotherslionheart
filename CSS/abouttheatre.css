@@ -245,6 +245,7 @@ padding-bottom: 5px;
         text-align: start;
         align-items: flex-start;
         margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     .hero_about_theatre_text h1 {
@@ -256,7 +257,7 @@ padding-bottom: 5px;
         letter-spacing: 0.088rem;
         font-size: 1.188rem;
         margin-top: 1rem;
-        width: 26.25rem;
+        width: 100%;
     }
 
 
