@@ -12,7 +12,7 @@ html {
 .hero {
     background: linear-gradient(to bottom, transparent 90%, #17232D 100%), url(../img/brothers_night_sky_final.jpg);
     width: var(--width-full);
-    min-height: 860px;
+    min-height: 53.75rem;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -222,8 +222,8 @@ padding-bottom: 5px;
     }
 
     .hero {
-        background: linear-gradient(to bottom, transparent 90%, #17232D 100%), url(../img/night_sky_darkened_mob.png);
-        min-height: 1007px;
+        background: linear-gradient(to bottom, transparent 90%, #17232D 100%), url(../img/brothers_night_sky_mobile_final.jpg);
+        min-height: 47.813rem;
         background-size: cover;
         background-position: center;
     }
