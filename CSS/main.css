@@ -34,7 +34,7 @@ body, html {
     margin: 0;
 }
 .container{
-    background-image: url(../img/main_picture_desktop2updated.jpg);
+    background-image: url(../img/final_main_brothers.jpg);
     min-height: 71.625rem;
     background-size: cover;
     position: relative;
@@ -132,8 +132,6 @@ body, html {
     font-size: 1.188rem;
     font-weight: 400;
     margin-top: 1rem;
-    margin-left: 1.5rem;
-    width: 26.25rem;
 }
 .hero_text_papyrus{
     background-image: url(../img/papyrus.png);

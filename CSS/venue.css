@@ -11,11 +11,11 @@ html {
 }
 
 .hero_venue {
-    background: linear-gradient(to bottom, #212E3500 90%, #212E35 100%), url(../img/landscape_bright_desktop.jpg);
+    background: linear-gradient(to bottom, #212E3500 90%, #212E35 100%), url(../img/brother_landscape_final.jpg);
     width: var(--width-full);
     height: auto;
     background-size: cover;
-    background-position: center center;
+    background-position: center bottom;
     display: flex;
     justify-content: center;
     position: relative;

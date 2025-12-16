@@ -10,7 +10,7 @@ html {
 }
 
 .hero {
-    background: linear-gradient(to bottom, transparent 90%, #17232D 100%), url(../img/night_sky_desktop.jpg);
+    background: linear-gradient(to bottom, transparent 90%, #17232D 100%), url(../img/brothers_night_sky_final.jpg);
     width: var(--width-full);
     min-height: 860px;
     background-size: cover;
